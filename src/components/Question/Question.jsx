@@ -11,14 +11,29 @@ const Question = () => {
   const handleClick = (e) => {
     const userAnswer = e.target.innerHTML;
 
-    userAnswer === data[nextQuestion].answer && setScore((prev) => prev + 1);
+    if (userAnswer === data[nextQuestion].answer) {
+      setScore((prev) => prev + 1);
+      setResult((prev) => [
+        ...prev,
+        {
+          question: data[nextQuestion].question,
+          answer: userAnswer,
+          status: "true",
+        },
+      ]);
+    } else {
+      setResult((prev) => [
+        ...prev,
+        {
+          question: data[nextQuestion].question,
+          answer: userAnswer,
+          status: "false",
+        },
+      ]);
+    }
 
     setNextQuestion((prev) => prev + 1);
     setCounter(30);
-    setResult((prev) => [
-      ...prev,
-      { question: data[nextQuestion].question, answer: userAnswer },
-    ]);
   };
 
   useEffect(() => {

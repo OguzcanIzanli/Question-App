@@ -1,10 +1,10 @@
 import "./App.css";
-import Question from "./components/Question";
+import Start from "./components/Start";
 
 function App() {
   return (
     <>
-      <Question />
+      <Start />
     </>
   );
 }

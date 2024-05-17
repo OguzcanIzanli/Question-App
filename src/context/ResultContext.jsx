@@ -13,7 +13,7 @@ export const ResultProvider = ({ children }) => {
     score,
     setScore,
   };
-  console.log(score);
+
   return (
     <ResultContext.Provider value={values}>{children}</ResultContext.Provider>
   );
