@@ -1,4 +1,5 @@
 import data from "../../data/questions";
+import "./Question.style.css";
 import useCountdown from "../../hooks/useCountdown";
 import { useResult } from "../../context/ResultContext";
 import { useEffect } from "react";
@@ -46,8 +47,8 @@ const Question = () => {
   }, [counter, nextQuestion, setResult]);
 
   return (
-    <div>
-      <div>{counter}</div>
+    <div className="questionContainer">
+      <div className="countdown">{counter}</div>
       <div>
         <img src={`../../../pictures/${data[nextQuestion].media}`} alt="" />
       </div>

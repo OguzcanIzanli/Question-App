@@ -1,26 +1,25 @@
-import { useState } from "react";
-import Question from "../Question";
-import Result from "../Result";
-import data from "../../data/questions";
-import { useResult } from "../../context/ResultContext";
+import "./Start.style.css";
 
-const Start = () => {
-  const [start, setStart] = useState(false);
-  const { result } = useResult();
-
-  const subAnswers = result.length;
-  const subQuestions = data.length;
+// eslint-disable-next-line react/prop-types
+const Start = ({ setStart }) => {
   return (
-    <div>
-      {!start ? (
-        <button id="start" onClick={() => setStart(true)}>
-          Teste Başla
-        </button>
-      ) : subAnswers != subQuestions ? (
-        <Question />
-      ) : (
-        <Result />
-      )}
+    <div className="startContainer">
+      <div className="info">
+        <h2>Bilgilendirme:</h2>
+        <ul>
+          <li>Bu test 10 sorundan oluşmaktadır.</li>
+          <li>Her soru için 30sn süre verilir.</li>
+          <li>Soru ekrana geldikten 10sn sonra cevap şıkları açılır.</li>
+          <li>
+            Cevap şıklarından biri tıklandıktan ya da 30sn tamamlandıktan sonra
+            yeni soruya geçilecektir.
+          </li>
+          <li>Geçmiş sorulara dönülemeyecektir.</li>
+        </ul>
+      </div>
+      <button id="start" onClick={() => setStart(true)}>
+        Teste Başla
+      </button>
     </div>
   );
 };

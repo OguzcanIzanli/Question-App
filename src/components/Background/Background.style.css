@@ -1,0 +1,43 @@
+.background {
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.background .shape {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.shape:first-child {
+  background: linear-gradient(var(--color-2), var(--color-4));
+  left: -80px;
+  top: 30px;
+}
+
+.shape.dark:first-child {
+  background: linear-gradient(var(--darkColor-3), var(--darkColor-2));
+}
+
+.shape:last-child {
+  background: linear-gradient(to right, var(--color-3), var(--color-1));
+  right: -30px;
+  bottom: 20px;
+}
+
+.shape.dark:last-child {
+  background: linear-gradient(to right, var(--darkColor-1), var(--darkColor-2));
+  right: -30px;
+  bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .background {
+    width: 40%;
+  }
+}

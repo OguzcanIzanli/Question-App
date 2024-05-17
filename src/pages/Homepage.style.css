@@ -1,0 +1,70 @@
+:root {
+  --color-1: #ff9b9b;
+  --color-2: #ffd6a5;
+  --color-3: #fffec4;
+  --color-4: #fa7070;
+
+  --darkColor-1: #27374d;
+  --darkColor-2: #526d82;
+  --darkColor-3: #9db2bf;
+  --darkColor-4: #dde6ed;
+}
+
+.container {
+  background: linear-gradient(45deg, var(--color-2) 25%, var(--color-1) 100%);
+  color: var(--color-4);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container.dark {
+  background: linear-gradient(
+    45deg,
+    var(--darkColor-2) 25%,
+    var(--darkColor-1) 100%
+  );
+  color: var(--darkColor-4);
+}
+
+.container button {
+  background-color: var(--color-4);
+  color: var(--color-3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.container.dark button {
+  background-color: var(--darkColor-4);
+  color: var(--darkColor-1);
+}
+
+button:hover {
+  scale: 0.95;
+}
+
+button:active {
+  scale: 0.9;
+  opacity: 0.7;
+}
+
+.questionApp {
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(8, 7, 16, 0.6);
+  padding: 20px 50px;
+}
+
+@media (max-width: 576px) {
+  .questionApp {
+    width: 90%;
+    padding: 20px 10px;
+  }
+}

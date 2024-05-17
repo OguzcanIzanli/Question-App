@@ -1,7 +1,9 @@
 import { useResult } from "../../context/ResultContext";
+// import "Result.style.css";
 
 const Result = () => {
-  const { result } = useResult();
+  const { result, score } = useResult();
+  console.log(score);
   return result.map((item, index) => (
     <div key={index} className={item.status}>
       {item.question}: {item.answer}
