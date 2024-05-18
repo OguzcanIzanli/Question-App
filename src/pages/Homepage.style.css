@@ -68,5 +68,6 @@ button:active {
   .questionApp {
     width: 90%;
     padding: 20px 10px;
+    margin: 50px 10px;
   }
 }
