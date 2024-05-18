@@ -20,6 +20,8 @@ This is a Question App built with React.js that provides an interactive quiz exp
 
 You can access the live website [here](https://reactquestionapp.netlify.app/).
 
+https://github.com/oguzcanizanli/Question-App/assets/95178772/fc5618fd-109e-4763-bb54-c6000d252dfd
+
 ## How To Use
 
 To clone and run this application, you'll need [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en) installed on your computer.
