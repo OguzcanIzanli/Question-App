@@ -7,7 +7,7 @@ const useCountdown = () => {
 
   useEffect(() => {
     const timer =
-      counter > 0 && setInterval(() => setCounter((prev) => prev - 1), 300);
+      counter > 0 && setInterval(() => setCounter((prev) => prev - 1), 1000);
 
     if (counter === 20) {
       setOpenOptions(true);
