@@ -27,7 +27,7 @@ const Homepage = () => {
         ) : subAnswers != subQuestions ? (
           <Question />
         ) : (
-          <Result />
+          <Result setStart={setStart} />
         )}
       </div>
     </div>

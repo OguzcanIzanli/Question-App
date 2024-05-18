@@ -15,7 +15,7 @@
 }
 
 .shape:first-child {
-  background: linear-gradient(var(--color-2), var(--color-4));
+  background: linear-gradient(var(--color-4), var(--color-2));
   left: -80px;
   top: 30px;
 }

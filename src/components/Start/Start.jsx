@@ -1,4 +1,5 @@
 import "./Start.style.css";
+import data from "../../data/questions";
 
 // eslint-disable-next-line react/prop-types
 const Start = ({ setStart }) => {
@@ -7,7 +8,7 @@ const Start = ({ setStart }) => {
       <div className="info">
         <h2>Bilgilendirme:</h2>
         <ul>
-          <li>Bu test 10 sorundan oluşmaktadır.</li>
+          <li>Bu test {data.length} sorudan oluşmaktadır.</li>
           <li>Her soru için 30sn süre verilir.</li>
           <li>Soru ekrana geldikten 10sn sonra cevap şıkları açılır.</li>
           <li>

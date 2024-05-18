@@ -2,7 +2,8 @@
   --color-1: #ff9b9b;
   --color-2: #ffd6a5;
   --color-3: #fffec4;
-  --color-4: #fa7070;
+  --color-4: #ee4e4e;
+  --color-5: #481e14;
 
   --darkColor-1: #27374d;
   --darkColor-2: #526d82;
@@ -11,8 +12,8 @@
 }
 
 .container {
-  background: linear-gradient(45deg, var(--color-2) 25%, var(--color-1) 100%);
-  color: var(--color-4);
+  background: linear-gradient(45deg, var(--color-3) 25%, var(--color-2) 100%);
+  color: var(--color-5);
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
   display: flex;
@@ -60,6 +61,7 @@ button:active {
   border-radius: 10px;
   box-shadow: 0 0 4px rgba(8, 7, 16, 0.6);
   padding: 20px 50px;
+  margin: 50px 50px;
 }
 
 @media (max-width: 576px) {
